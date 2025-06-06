@@ -39,7 +39,7 @@ user.name == 'John Doe'
 Like Java, MVEL supports the full gambit of operator precedence rules, including the ability to use bracketing to control execution order.
 
 ```
-(user.name == 'John Doe') &amp;&amp; ((x * 2) - 1) > 20
+(user.name == 'John Doe') && ((x * 2) - 1) > 20
 ```
 
 ### Multiple Statements
@@ -516,14 +516,14 @@ Unlike Java however, MVEL provides automatic type conversion (when possible) whe
 
 ```
 String num = 1;
-assert num instanceof String &amp;&amp; num == "1";
+assert num instanceof String && num == "1";
 ```
 
 For dynamically typed variables where you simply want to perform a type conversion, you may simply cast the value to the type you desire:
 
 ```
 num = (String) 1;
-assert num instanceof String &amp;&amp; num == "1";
+assert num instanceof String && num == "1";
 ```
 
 ## Function Definition
